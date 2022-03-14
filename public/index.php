@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PhoneVsPhone</title>
 
-    <script defer src="../src/js/script.js"></script>
+    <script defer type="module" src="../src/js/script.js"></script>
 
     <link rel="stylesheet" href="../src/css/general.css">
     <link rel="stylesheet" href="../src/css/style.css">
@@ -20,11 +20,31 @@
 </header>
 
 <section class="search">
-    <label for="search-a">Search phone A</label><br>
-    <input type="text" id="search-a" name="search-a">
+    <div class="search--item">
+        <label for="search-a">Search a phone</label>
+        <input type="text" id="search-a" name="search-a">
+    </div>
+    <div class="search--item">
+        <label for="select-a">Select the phone</label>
+        <select name="select-a" id="select-a"></select>
+    </div>
+    <div class="search--item last">
 
-    <label for="select-a">Select the phone</label><br>
-    <select name="select-a" id="select-a"></select>
+        <button id="search--action">
+            add
+        </button>
+    </div>
+</section>
+
+<section class="selection grid grid-col--1">
+    <div class="selection--item preview preview__first">
+        <h2></h2>
+        <img src="" alt="">
+    </div>
+    <div class="selection--item preview preview__second">
+        <h2></h2>
+        <img src="" alt="">
+    </div>
 </section>
 
 </body>

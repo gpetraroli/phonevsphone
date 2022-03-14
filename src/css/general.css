@@ -1,4 +1,4 @@
-/* Global reset */
+/* GLOBAL RESET */
 html {
     font-size: 62.5%;
 }
@@ -29,5 +29,22 @@ body {
     --spacing-s: 1rem;
     --spacing-m: 2rem;
     --spacing-b: 3rem;
+}
 
+
+/* GRID SYSTEM */
+.grid {
+    display: grid;
+}
+
+.grid-col--1 {
+    grid-template-columns: 1fr;
+}
+
+.grid-col--2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col--3 {
+    grid-template-columns: repeat(3, 1fr);
 }

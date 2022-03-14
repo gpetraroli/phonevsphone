@@ -5,4 +5,48 @@
     padding: 1rem 0;
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
+    margin-bottom: var(--spacing-m);
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-m);
+}
+
+.search--item {
+    font-size: 2rem;
+}
+
+.search--item:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.search--item * {
+    display: block;
+}
+
+.search input,
+.search select {
+    padding: var(--spacing-s);
+    width: 100%;
+}
+
+#search--action {
+    padding: var(--spacing-s) var(--spacing-m);
+}
+
+.selection--item:first-child {
+    margin-left: var(--spacing-b);
+}
+
+.selection--item:last-child {
+    justify-self: flex-end;
+    margin-right: var(--spacing-b);
+}
+
+.selection--item img{
+    max-height: 60%;
+    text-align: right;
 }
