@@ -1,0 +1,8 @@
+.header {
+    color: var(--light-gray);
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}

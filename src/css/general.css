@@ -1,0 +1,33 @@
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #212529;
+    line-height: 1.7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --primary-color: #4c6ef5;
+    --light-gray: #e9ecef;
+
+    /*  borders */
+    --border-radius: 8px;
+
+    /* spacing */
+    --spacing-s: 1rem;
+    --spacing-m: 2rem;
+    --spacing-b: 3rem;
+
+}
