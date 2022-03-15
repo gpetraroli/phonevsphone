@@ -27,7 +27,7 @@ searchInputAEl.addEventListener('change', ev => {
 });
 
 btnSearchEl.addEventListener('click', ev => {
-    getPhoneSpecs(selectInputAEl.value);
+    if (selectInputAEl.value) getPhoneSpecs(selectInputAEl.value);
 });
 
 btnSearchClearEl.addEventListener('click', ev => {
@@ -51,7 +51,7 @@ function updatePreview() {
         el.remove()
     });
 
-    console.log(appState);
+    console.log(appState); // TO BE REMOVED !!!
 
     if (appState.phoneA) {
         previewFirstEl.querySelector('h2').innerHTML = appState.phoneA.phone_name;
