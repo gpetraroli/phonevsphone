@@ -1,3 +1,16 @@
+/*
+BEM (Block Element Modifier)
+It's a CSS naming structure convention.
+
+BLOCK: Standalone component that is meaninful on its own.
+ELEMENT: Part of a block that has no standalone meaning.
+MODIFIER: A different version of a block or an element
+
+.block{}
+.block__element{}
+.block__element--modifier{}
+*/
+
 /* GLOBAL RESET */
 html {
     font-size: 62.5%;
@@ -20,7 +33,9 @@ body {
 :root {
     /* colors */
     --primary-color: #4c6ef5;
-    --light-gray: #e9ecef;
+    --secondary-color: red;
+    --light-gray: #f8f9fa;
+    --dark-gray: #ccc;
 
     /*  borders */
     --border-radius: 8px;

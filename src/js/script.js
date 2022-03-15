@@ -3,13 +3,13 @@ const appState = {
     'phoneB': null
 };
 
-const searchInputAEl = document.querySelector('#search-a');
-const selectInputAEl = document.querySelector('#select-a');
-const btnSearchEl = document.querySelector('#search--action');
-const btnSearchClearEl = document.querySelector('#search--clear');
+const searchInputAEl = document.querySelector('#search__input-text');
+const selectInputAEl = document.querySelector('#search__input-select');
+const btnSearchEl = document.querySelector('#search__control--add');
+const btnSearchClearEl = document.querySelector('#search__control--clear');
 
-const previewFirstEl = document.querySelector('.preview__first');
-const previewSecondEl = document.querySelector('.preview__second');
+const previewFirstEl = document.querySelector('.preview--first');
+const previewSecondEl = document.querySelector('.preview--second');
 
 searchInputAEl.addEventListener('change', ev => {
 
@@ -31,15 +31,14 @@ btnSearchEl.addEventListener('click', ev => {
 });
 
 btnSearchClearEl.addEventListener('click', ev => {
-
     resetPreview();
 });
 
 function getPhoneSpecs(phone_slug) {
-     fetch(`https://api-mobilespecs.azharimm.site/v2/${phone_slug}`)
+    fetch(`https://api-mobilespecs.azharimm.site/v2/${phone_slug}`)
         .then(response => response.json())
         .then(data => {
-            if(!appState.phoneA) appState.phoneA = data.data;
+            if (!appState.phoneA) appState.phoneA = data.data;
             else appState.phoneB = data.data;
 
             updatePreview();
@@ -48,14 +47,15 @@ function getPhoneSpecs(phone_slug) {
 
 function updatePreview() {
     searchInputAEl.value = '';
-    selectInputAEl.querySelectorAll('option').forEach(el => {el.remove()});
+    selectInputAEl.querySelectorAll('option').forEach(el => {
+        el.remove()
+    });
 
-    if(appState.phoneA) {
+    if (appState.phoneA) {
         previewFirstEl.querySelector('h2').innerHTML = appState.phoneA.phone_name;
         previewFirstEl.querySelector('img').src = appState.phoneA.thumbnail;
-        console.log(appState)
     }
-    if(appState.phoneB) {
+    if (appState.phoneB) {
         previewSecondEl.querySelector('h2').innerHTML = appState.phoneB.phone_name;
         previewSecondEl.querySelector('img').src = appState.phoneB.thumbnail;
     }
@@ -63,7 +63,9 @@ function updatePreview() {
 
 function resetPreview() {
     searchInputAEl.value = '';
-    selectInputAEl.querySelectorAll('option').forEach(el => {el.remove()});
+    selectInputAEl.querySelectorAll('option').forEach(el => {
+        el.remove()
+    });
 
     previewFirstEl.querySelector('h2').innerHTML = '';
     previewFirstEl.querySelector('img').src = '';
