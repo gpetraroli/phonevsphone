@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PhoneVsPhone</title>
 
-    <script defer type="module" src="../src/js/script.js"></script>
+    <script defer type="module" src="/assets/js/script.js"></script>
 
-    <link rel="stylesheet" href="../src/css/general.css">
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="/assets/css/general.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
