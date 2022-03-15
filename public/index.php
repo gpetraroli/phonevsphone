@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PhoneVsPhone</title>
 
-    <script defer type="module" src="/src/js/script.js"></script>
+    <script defer type="module" src="../src/js/script.js"></script>
 
-    <link rel="stylesheet" href="/src/css/general.css">
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="../src/css/general.css">
+    <link rel="stylesheet" href="../src/css/style.css">
 </head>
 
 <body>
@@ -45,13 +45,17 @@
 <section class="section section--preview">
     <div class="section--preview__item preview--first">
         <h2></h2>
-        <img src=""
-             alt="">
+        <div class="preview__content">
+            <img class='preview__img' src="" alt="">
+            <p></p>
+        </div>
     </div>
     <div class="section--preview__item preview--second">
         <h2></h2>
-        <img src=""
-             alt="">
+        <div class="preview__content">
+            <p></p>
+            <img class='preview__img' src="" alt="">
+        </div>
     </div>
 </section>
 

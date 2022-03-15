@@ -56,9 +56,20 @@
 }
 
 .preview--second {
+    border-top: 1px solid var(--dark-gray);
     text-align: right;
 }
 
-.section--preview__item img {
+.preview__content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.preview__content p {
+    text-align: left;
+}
+
+.preview__img {
     height: 15rem;
 }

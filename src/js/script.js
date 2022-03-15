@@ -51,13 +51,25 @@ function updatePreview() {
         el.remove()
     });
 
+    console.log(appState);
+
     if (appState.phoneA) {
         previewFirstEl.querySelector('h2').innerHTML = appState.phoneA.phone_name;
         previewFirstEl.querySelector('img').src = appState.phoneA.thumbnail;
+
+        previewFirstEl.querySelector('p').innerHTML = `brand: <strong>${appState.phoneA.brand}</strong><br>
+                                                               os: <strong>${appState.phoneA.os}</strong><br>
+                                                               dimensions: <strong>${appState.phoneA.dimension}</strong><br>
+                                                               <strong>${appState.phoneA.release_date}</strong>`;
     }
     if (appState.phoneB) {
         previewSecondEl.querySelector('h2').innerHTML = appState.phoneB.phone_name;
         previewSecondEl.querySelector('img').src = appState.phoneB.thumbnail;
+
+        previewSecondEl.querySelector('p').innerHTML = `brand: <strong>${appState.phoneB.brand}</strong><br>
+                                                               os: <strong>${appState.phoneB.os}</strong><br>
+                                                               dimensions: <strong>${appState.phoneB.dimension}</strong><br>
+                                                               <strong>${appState.phoneB.release_date}</strong>`;
     }
 }
 
@@ -69,9 +81,11 @@ function resetPreview() {
 
     previewFirstEl.querySelector('h2').innerHTML = '';
     previewFirstEl.querySelector('img').src = '';
+    previewFirstEl.querySelector('p').innerHTML = ''
 
     previewSecondEl.querySelector('h2').innerHTML = '';
     previewSecondEl.querySelector('img').src = '';
+    previewSecondEl.querySelector('p').innerHTML = ''
 
     appState.phoneA = null;
     appState.phoneB = null;
