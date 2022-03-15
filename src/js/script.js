@@ -6,6 +6,7 @@ const appState = {
 const searchInputAEl = document.querySelector('#search-a');
 const selectInputAEl = document.querySelector('#select-a');
 const btnSearchEl = document.querySelector('#search--action');
+const btnSearchClearEl = document.querySelector('#search--clear');
 
 const previewFirstEl = document.querySelector('.preview__first');
 const previewSecondEl = document.querySelector('.preview__second');
@@ -23,11 +24,15 @@ searchInputAEl.addEventListener('change', ev => {
                 selectInputAEl.appendChild(option);
             });
         });
-
 });
 
 btnSearchEl.addEventListener('click', ev => {
     getPhoneSpecs(selectInputAEl.value);
+});
+
+btnSearchClearEl.addEventListener('click', ev => {
+
+    resetPreview();
 });
 
 function getPhoneSpecs(phone_slug) {
@@ -54,4 +59,18 @@ function updatePreview() {
         previewSecondEl.querySelector('h2').innerHTML = appState.phoneB.phone_name;
         previewSecondEl.querySelector('img').src = appState.phoneB.thumbnail;
     }
+}
+
+function resetPreview() {
+    searchInputAEl.value = '';
+    selectInputAEl.querySelectorAll('option').forEach(el => {el.remove()});
+
+    previewFirstEl.querySelector('h2').innerHTML = '';
+    previewFirstEl.querySelector('img').src = '';
+
+    previewSecondEl.querySelector('h2').innerHTML = '';
+    previewSecondEl.querySelector('img').src = '';
+
+    appState.phoneA = null;
+    appState.phoneB = null;
 }

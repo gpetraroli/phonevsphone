@@ -20,6 +20,7 @@
 
 .search--item:last-child {
     display: flex;
+    justify-content: space-between;
     flex-direction: row-reverse;
 }
 
@@ -33,7 +34,7 @@
     width: 100%;
 }
 
-#search--action {
+.search--item button {
     padding: var(--spacing-s) var(--spacing-m);
 }
 
@@ -49,4 +50,9 @@
 .selection--item img{
     max-height: 60%;
     text-align: right;
+}
+
+.preview-controls {
+    display: flex;
+    justify-content: space-between;
 }

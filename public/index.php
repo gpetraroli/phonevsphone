@@ -28,11 +28,17 @@
         <label for="select-a">Select the phone</label>
         <select name="select-a" id="select-a"></select>
     </div>
-    <div class="search--item last">
-
+    <div class="search--item">
         <button id="search--action">
             add
         </button>
+        <button id="search--compere">
+            compare
+        </button>
+        <button id="search--clear">
+            clear
+        </button>
+
     </div>
 </section>
 
