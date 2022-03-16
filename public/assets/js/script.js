@@ -7,6 +7,7 @@ const searchInputAEl = document.querySelector('#search__input-text');
 const selectInputAEl = document.querySelector('#search__input-select');
 const btnSearchEl = document.querySelector('#search__control--add');
 const btnSearchClearEl = document.querySelector('#search__control--clear');
+const btnSearchCompareEl = document.querySelector('#search__control--compare');
 
 const previewFirstEl = document.querySelector('.preview--first');
 const previewSecondEl = document.querySelector('.preview--second');
@@ -23,6 +24,8 @@ searchInputAEl.addEventListener('change', ev => {
                 option.innerHTML = el.phone_name;
                 selectInputAEl.appendChild(option);
             });
+
+            selectInputAEl.focus();
         });
 });
 
@@ -34,6 +37,10 @@ btnSearchClearEl.addEventListener('click', ev => {
     resetPreview();
 });
 
+btnSearchCompareEl.addEventListener('click', ev => {
+       location.href = "compare.php";
+});
+
 function getPhoneSpecs(phone_slug) {
     fetch(`https://api-mobilespecs.azharimm.site/v2/${phone_slug}`)
         .then(response => response.json())
@@ -42,6 +49,7 @@ function getPhoneSpecs(phone_slug) {
             else appState.phoneB = data.data;
 
             updatePreview();
+            setLocalStorage();
         });
 }
 
@@ -63,6 +71,9 @@ function updatePreview() {
                                                                <strong>${appState.phoneA.release_date}</strong>`;
     }
     if (appState.phoneB) {
+        btnSearchCompareEl.disabled = false;
+        btnSearchEl.disabled = true;
+
         previewSecondEl.querySelector('h2').innerHTML = appState.phoneB.phone_name;
         previewSecondEl.querySelector('img').src = appState.phoneB.thumbnail;
 
@@ -74,6 +85,9 @@ function updatePreview() {
 }
 
 function resetPreview() {
+    btnSearchCompareEl.disabled = true;
+    btnSearchEl.disabled = false;
+
     searchInputAEl.value = '';
     selectInputAEl.querySelectorAll('option').forEach(el => {
         el.remove()
@@ -89,4 +103,11 @@ function resetPreview() {
 
     appState.phoneA = null;
     appState.phoneB = null;
+
+    setLocalStorage();
+}
+
+function setLocalStorage() {
+
+    window.localStorage.setItem('appState', JSON.stringify(appState));
 }

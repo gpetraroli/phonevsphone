@@ -20,7 +20,7 @@ body {
     font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
-    color: #212529;
+    color:var(--black);
     line-height: 1.7;
 }
 
@@ -30,12 +30,18 @@ body {
     box-sizing: border-box;
 }
 
+a:link, a:visited {
+    text-decoration: none;
+}
+
 :root {
     /* colors */
     --primary-color: #4c6ef5;
     --secondary-color: #fa5252;
-    --light-gray: #f8f9fa;
-    --dark-gray: #ccc;
+    --white: #f8f9fa;
+    --black: #343a40;
+    --light-gray: #dee2e6;
+    --dark-gray: #ced4da;
 
     /*  borders */
     --border-radius: 8px;
@@ -46,6 +52,15 @@ body {
     --spacing-b: 3rem;
 }
 
+.separator-h {
+    border-bottom: 1px solid var(--dark-gray);
+    width: 100%;
+}
+
+.separator-v {
+    border-right: 1px solid var(--dark-gray);
+    height: 100%;
+}
 
 /* GRID SYSTEM */
 .grid {

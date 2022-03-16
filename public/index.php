@@ -1,24 +1,14 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PhoneVsPhone</title>
-
-    <script defer type="module" src="/assets/js/script.js"></script>
-
-    <link rel="stylesheet" href="/assets/css/general.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-
 <body>
 
-<header class="header">
-    <h1>PhoneVsPhone</h1>
-    <p>compare smartphones easily</p>
-</header>
+
+<?php
+require 'components.php';
+
+echo getHtmlHead(['assets/js/script.js']);
+echo getHtmlHeader();
+?>
 
 <section class="section section--search">
     <div class="search__input">
@@ -33,7 +23,7 @@
         <button id="search__control--clear" class="search__control">
             clear
         </button>
-        <button id="search__control--compare" class="search__control">
+        <button id="search__control--compare" class="search__control" disabled>
             compare
         </button>
         <button id="search__control--add" class="search__control">
@@ -50,6 +40,7 @@
             <p></p>
         </div>
     </div>
+    <div class="separator-h"></div>
     <div class="section--preview__item preview--second">
         <h2></h2>
         <div class="preview__content">
