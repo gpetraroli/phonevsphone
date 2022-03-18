@@ -32,7 +32,7 @@ body {
 
 :root {
     /* colors */
-    --primary-color: #4c6ef5;
+    --primary-color: azure;
     --secondary-color: #fa5252;
     --light-gray: #f8f9fa;
     --dark-gray: #ccc;
