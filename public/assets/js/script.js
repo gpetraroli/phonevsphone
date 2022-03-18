@@ -42,6 +42,8 @@ btnSearchCompareEl.addEventListener('click', ev => {
 });
 
 function getPhoneSpecs(phone_slug) {
+    if (!appState.phoneA) document.querySelector('.lds-dual-ring--a').style.display = 'inline-block';
+    else document.querySelector('.lds-dual-ring--b').style.display = 'inline-block';
     fetch(`https://api-mobilespecs.azharimm.site/v2/${phone_slug}`)
         .then(response => response.json())
         .then(data => {
@@ -54,6 +56,8 @@ function getPhoneSpecs(phone_slug) {
 }
 
 function updatePreview() {
+    document.querySelectorAll('.lds-dual-ring').forEach(el => el.style.display = 'none');
+
     searchInputAEl.value = '';
     selectInputAEl.querySelectorAll('option').forEach(el => {
         el.remove()

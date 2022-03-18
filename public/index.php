@@ -2,7 +2,6 @@
 <html lang="en">
 <body>
 
-
 <?php
 require 'components.php';
 
@@ -36,6 +35,7 @@ echo getHtmlHeader();
     <div class="section--preview__item preview--first">
         <h2></h2>
         <div class="preview__content">
+            <div class="lds-dual-ring lds-dual-ring--a"></div>
             <img class='preview__img' src="" alt="">
             <p></p>
         </div>
@@ -44,6 +44,7 @@ echo getHtmlHeader();
     <div class="section--preview__item preview--second">
         <h2></h2>
         <div class="preview__content">
+            <div class="lds-dual-ring lds-dual-ring--b"></div>
             <p></p>
             <img class='preview__img' src="" alt="">
         </div>
