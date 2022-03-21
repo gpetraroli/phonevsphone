@@ -22,121 +22,121 @@ echo getHtmlHeader();
         <h3 id="compare__brand--b" class="compare__brand"></h3>
     </div>
 
-    <div id='compare__box--os' class="compare__box compare__box--category grid grid-col--2">
+    <div id='compare__box--os' class="compare__box compare__box--category grid grid-col--4">
         <h4 class="category--name"></h4>
         <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
     </div>
 
-    <div id='compare__box--display' class="compare__box compare__box--category grid grid-col--3">
+    <div id='compare__box--display' class="compare__box compare__box--category grid grid-col--4">
         <h4 class="category--name"></h4>
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
     </div>
 
-    <div id='compare__box--camera-main' class="compare__box compare__box--category grid grid-col--3">
+    <div id='compare__box--camera-main' class="compare__box compare__box--category grid grid-col--4">
         <h4 class="category--name"></h4>
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
     </div>
 
-    <div id='compare__box--camera-selfie' class="compare__box compare__box--category grid grid-col--3">
+    <div id='compare__box--camera-selfie' class="compare__box compare__box--category grid grid-col--4">
         <h4 class="category--name"></h4>
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
     </div>
 
-    <div id='compare__box--camera-platform' class="compare__box compare__box--category grid grid-col--3">
+    <div id='compare__box--platform' class="compare__box compare__box--category grid grid-col--4">
         <h4 class="category--name"></h4>
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
     </div>
 
-    <div id='compare__box--camera-memory' class="compare__box compare__box--category grid grid-col--3">
+    <div id='compare__box--memory' class="compare__box compare__box--category grid grid-col--4">
         <h4 class="category--name"></h4>
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
     </div>
 
-    <div id='compare__box--camera-battery' class="compare__box compare__box--category grid grid-col--3">
+    <div id='compare__box--battery' class="compare__box compare__box--category grid grid-col--4">
         <h4 class="category--name"></h4>
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
     </div>
 
-    <div id='compare__box--camera-network' class="compare__box compare__box--category grid grid-col--3">
+    <div id='compare__box--network' class="compare__box compare__box--category grid grid-col--4">
         <h4 class="category--name"></h4>
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
     </div>
 
-    <div id='compare__box--camera-body' class="compare__box compare__box--category grid grid-col--3">
+    <div id='compare__box--body' class="compare__box compare__box--category grid grid-col--4">
         <h4 class="category--name"></h4>
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
 
-        <p class="specs specs--a"></p>
         <p class="category__sub"></p>
+        <p class="specs specs--a"></p>
         <p class="specs specs--b"></p>
     </div>
 </section>

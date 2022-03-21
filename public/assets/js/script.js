@@ -63,9 +63,8 @@ function updatePreview() {
         el.remove()
     });
 
-    console.log(appState); // TO BE REMOVED !!!
-
     if (appState.phoneA) {
+        searchInputAEl.focus();
         previewFirstEl.querySelector('h2').innerHTML = appState.phoneA.phone_name;
         previewFirstEl.querySelector('img').src = appState.phoneA.thumbnail;
 
@@ -76,6 +75,7 @@ function updatePreview() {
     }
     if (appState.phoneB) {
         btnSearchCompareEl.disabled = false;
+        btnSearchCompareEl.focus();
         btnSearchEl.disabled = true;
 
         previewSecondEl.querySelector('h2').innerHTML = appState.phoneB.phone_name;
@@ -109,6 +109,8 @@ function resetPreview() {
     appState.phoneB = null;
 
     setLocalStorage();
+
+    searchInputAEl.focus();
 }
 
 function setLocalStorage() {
