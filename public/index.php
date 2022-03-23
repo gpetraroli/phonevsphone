@@ -19,7 +19,6 @@
         </header>
     </a>
 
-
     <section class="section section--search">
 
         <div class="search__input">
@@ -63,35 +62,8 @@
         </div>
     </section>
 
+    <?php include 'footer.php' ?>
 
-    <footer>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <div class="container" style="padding: 80px 0;" align="center">
-          <a href="#">
-              <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-          </a>
-          <a href="#">
-                  <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-              </a>
-              <a href="#">
-                      <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                  </a>
-                  <a href="#">
-                          <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                      </a>
-                      <a href="#">
-                              <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                          </a>
-                          <a href="#">
-                                  <i class="fa fa-pinterest fa-lg white-text"></i>
-                              </a>
-      </div>
-      <div style="background: #004872;">
-          <p style="color: #91BEC2; padding: 20px 0;" align="center"> &copy; 2022 Copyright: 
-          <a href="https://www.wildcodeschool.com/fr-FR/campus/bordeaux Created By: G-JM-O>
-          </p>
-      </div>
-  </footer>
 
 
 </body>

@@ -31,12 +31,16 @@ ul {
 .navbar__link {
   padding: 0 10px;
 }
-.navbar__link > a {
-  color: var(--white);
-  text-decoration: none;
-}
+/*.navbar__link > a {*/
+/*  color: var(--white);*/
+/*  text-decoration: none;*/
+/*}*/
 .burger {
   display: none;
+}
+
+.navbar__logo img {
+  max-width: 20rem;
 }
 
 /*  Mobile First (La Base...) */
@@ -51,7 +55,7 @@ ul {
     position: absolute;
     top: 65px;
     right: 0;
-    background: var(--navbar-bg-color);
+    background: var(--primary-color);
     transform: translateX(110%);
     transition: all 0.5s ease-in-out;
   }
@@ -70,7 +74,6 @@ ul {
     display: block;
     padding: 1rem;
     font-size: 1.6rem;
-    color: (--primary-color);
     transition: all 0.4s ease-in-out;
   }
   .navbar__link > a:hover {
@@ -85,8 +88,8 @@ ul {
     padding: 0;
     width: 45px;
     height: 45px;
-    border: 1px solid white;
-    border-radius: 10px;
+    /*border: 1px solid white;*/
+    /*border-radius: 10px;*/
     background: transparent;
     cursor: pointer;
   }
@@ -128,19 +131,19 @@ ul {
 
   /*  Animations de OUF !!!! */
   .show-nav .first {
-    transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
   }
   .show-nav .second {
-    transition: all 1.1s ease-out;
+    transition: all 0.6s ease-out;
   }
   .show-nav .third {
-    transition: all 1.2s ease-out;
+    transition: all 0.7s ease-out;
   }
   .show-nav .four {
-    transition: all 1.3s ease-out;
+    transition: all 0.8s ease-out;
   }
   .show-nav .fifth {
-    transition: all 1.4s ease-out;
+    transition: all 0.9s ease-out;
   }
 }
 
@@ -161,28 +164,30 @@ ul {
 
 /***********************FOOTER***************************/
 footer {
-  background: rgb(0, 91, 143);
-  margin-top: 320px;
-  font-family: sans-serif;
-  color: white;
-  background-color: #ffff00;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff8000'/%3E%3Cstop offset='1' stop-color='%23ff8000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300ff19'/%3E%3Cstop offset='1' stop-color='%2300ff19' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239900ff'/%3E%3Cstop offset='1' stop-color='%239900ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffff00'/%3E%3Cstop offset='1' stop-color='%23ffff00' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF0000'/%3E%3Cstop offset='1' stop-color='%23FF0000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: var(--primary-color);
+  background: radial-gradient(circle at 30% 107%, #FDF497 0%, #FDF497 5%, #FD5949 45%,#D6249F 60%,#285AEB 90%);
+  padding: var(--spacing-b) 0;
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-b);
 }
-a:link {
-  color: #fff;
+a:link, a:visited {
+  color: var(--white);
   text-decoration: none;
 }
-a:visited {
-  color: #fff;
+a:hover, a:active {
   text-decoration: none;
 }
-a:hover {
-  color: #fff;
-  text-decoration: none;
+
+nav a {
+  text-transform: uppercase;
 }
-a:active {
-  color: #fff;
-  text-decoration: none;
+
+.footer--content {
+  display: flex;
+  gap: var(--spacing-m);
 }

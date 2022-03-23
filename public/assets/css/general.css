@@ -44,7 +44,7 @@ a:link, a:visited {
     --dark-gray: #ced4da;
 
     /*  borders */
-    --border-radius: 8px;
+    --border-radius: 10px;
 
     /* spacing */
     --spacing-s: 1rem;

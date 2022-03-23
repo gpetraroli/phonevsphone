@@ -160,3 +160,38 @@
         transform: rotate(360deg);
     }
 }
+
+
+/* NEWEST */
+.section--newest {
+    gap:var(--spacing-b);
+}
+
+.newest--title {
+    text-align: center;
+    margin-bottom: var(--spacing-b);
+}
+
+.newest--item {
+    align-items: center;
+    margin: 0 auto;
+
+    display: flex;
+    gap: var(--spacing-b);
+}
+
+.newest--item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.newest--item--img {
+    justify-self: center;
+}
+
+.newest--item--img img {
+    max-width: 20rem;
+}
+
+.newest--item--title {
+    margin-bottom: var(--spacing-m);
+}
