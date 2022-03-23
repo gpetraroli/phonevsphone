@@ -1,6 +1,7 @@
 <?php
 
-function getHtmlHead($scriptsURLs): string {
+function getHtmlHead($scriptsURLs): string
+{
 
     $scriptMarkup = '';
 
@@ -16,19 +17,12 @@ function getHtmlHead($scriptsURLs): string {
             <title>PhoneVsPhone</title>
             
             ' .
-            $scriptMarkup
-            . '
+        $scriptMarkup
+        . '
 
+        <link rel="stylesheet" href="assets/css/menu.css">
             <link rel="stylesheet" href="assets/css/general.css">
             <link rel="stylesheet" href="assets/css/style.css">
+
         </head>';
-
-}
-
-function getHtmlHeader(): string {
-
-    return '<a href="index.php"><header class="header">
-                <h1>PhoneVsPhone</h1>
-                <p>compare smartphones easily</p>
-            </header></a>';
 }
