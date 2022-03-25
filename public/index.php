@@ -7,6 +7,14 @@
     require 'components.php';
 
     echo getHtmlHead(['assets/js/script.js']);
+
+    for($i = 0; $i < $xxx; $i++) {
+
+    }
+
+    foreach ($xxx as $key => $el) {
+
+    }
     ?>
 
     <a href="index.php">

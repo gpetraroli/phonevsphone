@@ -15,9 +15,11 @@ p,
 ul {
   color: var(--white);
 }
+
 ul {
   list-style: none;
 }
+
 .navbar {
   display: flex;
   align-items: center;
