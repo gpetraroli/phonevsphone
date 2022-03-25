@@ -1,0 +1,51 @@
+
+form {
+    background: transparent;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(4, 100px);
+    padding: 60px 45px 30px;
+
+    border-radius: 16px;
+    /*box-shadow: -1px 2px 20px 5px rgb(0 0 0 / 31%) inset;*/
+}
+
+.section--newsletter h2, .section--newsletter p {
+    text-align: center;
+}
+
+form input {
+    margin: 7px 0 7px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--dark-gray);
+
+    padding: var(--spacing-s);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+
+input[type="submit"] {
+    border: none;
+    background: linear-gradient(65deg, #16d9e7, #5ef9a4);
+    width: 50%;
+    margin: 12px auto 0;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    /*font-size: 1.2rem;*/
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+input[type="submit"]:hover {
+    filter: brightness(100%);
+    transform: translateX(5px);
+}
+
+.checkboxes {
+    display: flex;
+    gap: var(--spacing-m);
+    flex-wrap: wrap;
+}

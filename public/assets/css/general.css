@@ -43,6 +43,8 @@ a:link, a:visited {
     --light-gray: #dee2e6;
     --dark-gray: #ced4da;
 
+    --shadow: 0px 5px 10px 1px rgba(0,0,0,0.2);
+
     /*  borders */
     --border-radius: 8px;
 
@@ -50,6 +52,10 @@ a:link, a:visited {
     --spacing-s: 1rem;
     --spacing-m: 2rem;
     --spacing-b: 3rem;
+}
+
+.icon--b {
+    font-size: 40px;
 }
 
 .separator-h {

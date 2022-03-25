@@ -6,8 +6,17 @@
 require 'components.php';
 
 echo getHtmlHead(['assets/js/script.js']);
-echo getHtmlHeader();
 ?>
+
+<a href="index.php">
+    <header class="header">
+        <h1>PhoneVsPhone</h1>
+        <p>compare smartphones easily</p>
+        <?php
+        require 'menu.php';
+        ?>
+    </header>
+</a>
 
 <section class="section section--search">
     <div class="search__input">
@@ -50,6 +59,8 @@ echo getHtmlHeader();
         </div>
     </div>
 </section>
+
+<?php include 'footer.php' ?>
 
 </body>
 </html>

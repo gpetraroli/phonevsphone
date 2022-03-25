@@ -1,6 +1,6 @@
 <?php
 
-function getHtmlHead($scriptsURLs): string {
+function getHtmlHead($scriptsURLs=[]): string {
 
     $scriptMarkup = '';
 
@@ -19,6 +19,11 @@ function getHtmlHead($scriptsURLs): string {
             $scriptMarkup
             . '
 
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+            <link rel="stylesheet" href="assets/css/menu.css">
+            <link rel="stylesheet" href="assets/css/form.css">
             <link rel="stylesheet" href="assets/css/general.css">
             <link rel="stylesheet" href="assets/css/style.css">
         </head>';
