@@ -1,6 +1,6 @@
 
 form {
-    background: transparent;
+    background: skyblue;
     display: grid;
     justify-content: center;
     grid-template-rows: repeat(4, 100px);
